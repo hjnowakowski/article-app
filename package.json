@@ -4,7 +4,7 @@
   "description": "simple knowladgebase app",
   "main": "app.js",
   "scripts": {
-    "start": "node app"
+    "start": "node app.js"
   },
   "author": "Henryk Nowakowski",
   "license": "ISC",

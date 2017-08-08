@@ -84,7 +84,7 @@ app.use(passport.session());
 app.get('*', function(req, res, next){
   res.locals.user = req.user || null;
   next();
-})
+});
 
 //home route
 app.get('/', function(req, res){
@@ -106,6 +106,6 @@ app.use('/articles', articles);
 app.use('/users', users);
 
 //start server
-app.listen(3001, function(){
-  console.log('Server started on port ' + app.get('port'));
-});
+
+var port=Number(process.env.PORT || 3000);
+app.listen(port);
